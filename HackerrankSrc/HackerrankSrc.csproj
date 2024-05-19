@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{29FDA3A6-57F9-4D17-8150-E316146B810B}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Rackerrank</RootNamespace>
+    <AssemblyName>Rackerrank</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="basicAlgorithm\Graph\GraphTravesrsal.cs" />
+    <Compile Include="basicAlgorithm\Graph\Dijkstra.cs" />
+    <Compile Include="basicAlgorithm\Graph\Kruskal.cs" />
+    <Compile Include="basicAlgorithm\Graph\Prim.cs" />
+    <Compile Include="basicAlgorithm\Sorting\InsertionSort.cs" />
+    <Compile Include="basicAlgorithm\QueueUsingStack.cs" />
+    <Compile Include="basicAlgorithm\Sorting\QuickSort.cs" />
+    <Compile Include="basicAlgorithm\Sorting\HeapSort.cs" />
+    <Compile Include="basicAlgorithm\StackUsingQueue.cs" />
+    <Compile Include="DataTypes\GraphData.cs" />
+    <Compile Include="DataTypes\TreeNode.cs" />
+    <Compile Include="DataTypes\ListNode.cs" />
+    <Compile Include="problemSolving\addTwoNumberLC.cs" />
+    <Compile Include="problemSolving\BitwiseOperation.cs" />
+    <Compile Include="real-interview-question\BinaryGap\BinaryGap\BinaryGap.cs" />
+    <Compile Include="real-interview-question\BinaryGap\BinaryGap\SmallestInt.cs" />
+    <Compile Include="real-interview-question\CandiesDP.cs" />
+    <Compile Include="basicAlgorithm\MaximalSquareDP.cs" />
+    <Compile Include="basicAlgorithm\Sorting\MergeSort.cs" />
+    <Compile Include="basicAlgorithm\Sorting\SelectionSort.cs" />
+    <Compile Include="basicAlgorithm\Sorting\BubbleSort.cs" />
+    <Compile Include="problemSolving\ConvertNumberBase1.cs" />
+    <Compile Include="problemSolving\ConvertIntToExcelTitleLC.cs" />
+    <Compile Include="problemSolving\TreeMaxDepthLC.cs" />
+    <Compile Include="real-interview-question\ComplementBase10Number.cs" />
+    <Compile Include="real-interview-question\FindNumberOfParents.cs" />
+    <Compile Include="real-interview-question\MaxDifference.cs" />
+    <Compile Include="real-interview-question\FindTheMissingNumber.cs" />
+    <Compile Include="real-interview-question\MaximumConsecutiveSubarrySumK.cs" />
+    <Compile Include="real-interview-question\PeakElement.cs" />
+    <Compile Include="real-interview-question\real-assessment\microsoft\AddTwoNumberMostSignnificatnInTheBeginning.cs" />
+    <Compile Include="problemSolving\firstMissingPositiveLC.cs" />
+    <Compile Include="real-interview-question\LongestValidParenthesis.cs" />
+    <Compile Include="real-interview-question\CheckBalancedParenthesisExpression.cs" />
+    <Compile Include="real-interview-question\PostfixExpressionEvaluation.cs" />
+    <Compile Include="real-interview-question\NumberOfIslands.cs" />
+    <Compile Include="real-interview-question\real-assessment\microsoft\MergeTwoArray.cs" />
+    <Compile Include="real-interview-question\real-assessment\microsoft\TrimBST.cs" />
+    <Compile Include="real-interview-question\LinkedListOperations.cs" />
+    <Compile Include="real-interview-question\ROKT_couponChange.cs" />
+    <Compile Include="real-interview-question\RomanToIntNumber.cs" />
+    <Compile Include="real-interview-question\ShowMatrixInSpiralOrder.cs" />
+    <Compile Include="real-interview-question\ConfusingNumber.cs" />
+    <Compile Include="RunProgram.cs" />
+    <Compile Include="problemSolving\RegularExpresionMatch.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="real-interview-question\real-assessment\microsoft\%2811%29 LeetCode - Mock Assessment - LeetCode.pdf" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="real-interview-question\real-assessment\microsoft\Q1 LeetCode - Mock Assessment - LeetCode.png" />
+    <Content Include="real-interview-question\real-assessment\microsoft\Q1.txt" />
+    <Content Include="real-interview-question\real-assessment\microsoft\Q2 LeetCode - Mock Assessment - LeetCode.png" />
+    <Content Include="real-interview-question\real-assessment\microsoft\Q2.txt" />
+    <Content Include="real-interview-question\real-assessment\microsoft\Q3 LeetCode - Mock Assessment - LeetCode.png" />
+    <Content Include="real-interview-question\real-assessment\microsoft\Q3.txt" />
+    <Content Include="real-interview-question\real-assessment\microsoft\Q4 LeetCode - Mock Assessment - LeetCode.png" />
+    <Content Include="real-interview-question\real-assessment\microsoft\Q4.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
